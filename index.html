@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Clone Feeds</title>
+  </head>
+  <body onload="twitter.load()">
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>Home</li>
+          <li>Notificação</li>
+          <li>Sair</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content-center">
+      <div>
+        <img class="content-img" src="./assets/images/avatar.jpg" alt="Imagem persona" />
+        <h3>@Viviane Gaspar</h3>
+        <h4><i class="fas fa-map-marker-alt"></i>São Paulo - SP</h4>
+      </div>
+      <form method="POST">
+        <div class="content-main">
+          <p>O que você está pensando</p>
+          <textarea class="conteiner-textarea" onkeyup="twitter.counter()" id="msg"></textarea>
+          <button class="btn-submit" id="btn-tweet">Enviar</button>
+          <div id="count" class="count-initial"></div>
+        </div>
+      </form>
+      <div class="result-msg" id="result"></div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/63ef99a014.js"></script>
+    <script src="twitter.js"></script>
+  </body>
+</html>
